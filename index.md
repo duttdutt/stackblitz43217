@@ -3,13 +3,13 @@
 layout: home
 
 hero:
-  name: "Test"
+  name: "Пиздец"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /markdown-examples
+      link: /docs/javascript/Исполнение
     - theme: alt
       text: API Examples
       link: /api-examples
@@ -23,3 +23,4 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+# Test
