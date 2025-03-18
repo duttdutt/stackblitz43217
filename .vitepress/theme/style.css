@@ -2,7 +2,7 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
     --vp-sidebar-bg-color: #25293a;
     --vp-c-bg: #292d3e;
     --vp-code-copy-code-bg: #25293a;
@@ -94,11 +94,12 @@
  * Shiki
  */
 :root {
-    --vp-font-family-mono: 'MonoLisa Nerd Font';
+    --vp-font-family-mono: "MonoLisa Nerd Font", "MonoLisa Nerd Font Regular",
+        "MonoLisa", "Menlo", "SF Mono";
     --vp-code-font-size: 0.9em;
     --vp-code-color: #80cbc4;
 }
-.vp-doc [class*='language-'] pre {
+.vp-doc [class*="language-"] pre {
     background-color: #32374c !important;
     border: 1px solid var(--vp-sidebar-bg-color);
     border-left: none;
@@ -116,8 +117,8 @@
     border-bottom: none;
 }
 
-.vp-doc [class*='language-'] > button.copy:hover::before,
-.vp-doc [class*='language-'] > button.copy::before,
+.vp-doc [class*="language-"] > button.copy:hover::before,
+.vp-doc [class*="language-"] > button.copy::before,
 .copied,
 .copied:hover {
     border: none;
@@ -127,7 +128,7 @@ body {
     -webkit-font-smoothing: unset;
 }
 
-.vp-doc [class*='language-'] pre {
+.vp-doc [class*="language-"] pre {
     font-weight: 400;
 }
 
@@ -179,15 +180,15 @@ body {
     max-height: 96px;
 }
 
-.vp-sponsor-grid.mini .vp-sponsor-grid-image[alt='Bit'] {
+.vp-sponsor-grid.mini .vp-sponsor-grid-image[alt="Bit"] {
     max-height: 48px;
 }
 
-.vp-sponsor-grid.xmini .vp-sponsor-grid-image[alt='JetBrains'] {
+.vp-sponsor-grid.xmini .vp-sponsor-grid-image[alt="JetBrains"] {
     max-height: 54px;
 }
 
-.vp-sponsor-grid.medium .vp-sponsor-grid-image[alt='JetBrains'] {
+.vp-sponsor-grid.medium .vp-sponsor-grid-image[alt="JetBrains"] {
     max-height: 100px;
 }
 
@@ -222,14 +223,14 @@ body {
 
 /* Badges */
 .vt-badge.wip:before {
-    content: 'WIP';
+    content: "WIP";
 }
 
 .vt-badge.ts {
     background-color: #3178c6;
 }
 .vt-badge.ts:before {
-    content: 'TS';
+    content: "TS";
 }
 
 .vt-badge.dev-only,
@@ -239,11 +240,11 @@ body {
 }
 
 .vt-badge.dev-only:before {
-    content: 'Dev only';
+    content: "Dev only";
 }
 
 .vt-badge.experimental:before {
-    content: 'Experimental';
+    content: "Experimental";
 }
 
 .vt-badge[data-text]:before {
@@ -341,7 +342,7 @@ li::marker {
     color: #dfdfd6;
 }
 
-.vp-doc div[class*='language-'] {
+.vp-doc div[class*="language-"] {
     margin-top: 5px;
 }
 
@@ -371,7 +372,31 @@ em {
     border-radius: 4px;
 }
 
-
 .vp-doc :not(pre) > code {
     padding: 0.5px 4px;
+}
+
+.VPSidebar,
+.title {
+    background-color: #25293a !important;
+}
+
+.content,
+.VPDoc,
+.VPDocAside .content,
+.VPContent,
+.content-body,
+.divider-line,
+.VPLocalNav {
+    background-color: #292d3e !important;
+    border: none !important;
+}
+
+@media (max-width: 959px) {
+    .title,
+    header,
+    .VPNavBar,
+    .wrapper {
+        background-color: #292d3e !important;
+    }
 }
