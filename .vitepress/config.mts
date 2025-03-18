@@ -45,27 +45,11 @@ const sidebar = {
             ],
         },
     ],
-    '/typescript/': [
-        {
-            text: "<img src='https://api.iconify.design/material-icon-theme:typescript.svg '/> General",
-            collapsed: true,
-            items: [
-                {
-                    text: 'Массивы',
-                    link: '/typescript/arrays',
-                },
-                {
-                    text: 'Test2',
-                    link: '/typescript/test2',
-                },
-            ],
-        },
-    ],
 }
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'Заметки',
+    title: 'ЛОЛ',
     description: 'A VitePress Site',
     appearance: 'dark',
     markdown: {
