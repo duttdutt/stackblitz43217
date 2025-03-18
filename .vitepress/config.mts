@@ -68,6 +68,7 @@ export default defineConfig({
     title: 'Заметки',
     description: 'A VitePress Site',
     appearance: 'dark',
+
     markdown: {
         theme: {
             light: 'material-theme-darker',
