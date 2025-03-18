@@ -12,35 +12,51 @@ import { defineConfig } from 'vitepress'
 const nav = [
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-javascript.svg '/> JavaScript",
-        link: '/javascript/',
+        link: '/docs/javascript/',
         activeMatch: '/javascript/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-typescript.svg '/> TypeScript",
-        link: '/typescript/',
+        link: '/docs/typescript/',
         activeMatch: '/typescript/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-vue.svg '/> Vue",
-        link: '/vue/',
+        link: '/docs/vue/',
         activeMatch: '/vue/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-other.svg ' /> Другое",
-        link: '/other/',
+        link: '/docs/other/',
         activeMatch: '/other/',
     },
 ]
 
 const sidebar = {
-    '/javascript/': [
+    '/docs/javascript/': [
         {
             text: "<img src='https://api.iconify.design/material-icon-theme:javascript.svg '/> Общее",
             collapsed: true,
             items: [
                 {
                     text: 'Исполнение',
-                    link: '/javascript/Исполнение',
+                    link: '/docs/javascript/Исполнение',
+                },
+            ],
+        },
+    ],
+    '/docs/typescript/': [
+        {
+            text: "<img src='https://api.iconify.design/material-icon-theme:typescript.svg '/> General",
+            collapsed: true,
+            items: [
+                {
+                    text: 'Массивы',
+                    link: '/docs/typescript/arrays',
+                },
+                {
+                    text: 'Test2',
+                    link: '/docs/typescript/test2',
                 },
             ],
         },
@@ -49,7 +65,7 @@ const sidebar = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'ЛОЛ',
+    title: 'Заметки',
     description: 'A VitePress Site',
     appearance: 'dark',
     markdown: {
@@ -225,7 +241,7 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com//' }],
 
         editLink: {
-            pattern: 'https://github.com/duttdutt/:path',
+            pattern: 'https://github.com/duttdutt/docs/:path',
             text: 'GitHub',
         },
 
