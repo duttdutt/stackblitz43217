@@ -12,51 +12,51 @@ import { defineConfig } from 'vitepress'
 const nav = [
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-javascript.svg '/> JavaScript",
-        link: '/docs/javascript/',
+        link: '/javascript/',
         activeMatch: '/javascript/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-typescript.svg '/> TypeScript",
-        link: '/docs/typescript/',
+        link: '/typescript/',
         activeMatch: '/typescript/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-vue.svg '/> Vue",
-        link: '/docs/vue/',
+        link: '/vue/',
         activeMatch: '/vue/',
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-other.svg ' /> Другое",
-        link: '/docs/other/',
+        link: '/other/',
         activeMatch: '/other/',
     },
 ]
 
 const sidebar = {
-    '/docs/javascript/': [
+    '/javascript/': [
         {
             text: "<img src='https://api.iconify.design/material-icon-theme:javascript.svg '/> Общее",
             collapsed: true,
             items: [
                 {
                     text: 'Исполнение',
-                    link: '/docs/javascript/Исполнение',
+                    link: '/javascript/Исполнение',
                 },
             ],
         },
     ],
-    '/docs/typescript/': [
+    '/typescript/': [
         {
             text: "<img src='https://api.iconify.design/material-icon-theme:typescript.svg '/> General",
             collapsed: true,
             items: [
                 {
                     text: 'Массивы',
-                    link: '/docs/typescript/arrays',
+                    link: '/typescript/arrays',
                 },
                 {
                     text: 'Test2',
-                    link: '/docs/typescript/test2',
+                    link: '/typescript/test2',
                 },
             ],
         },
