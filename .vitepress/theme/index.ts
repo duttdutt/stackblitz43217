@@ -6,6 +6,8 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import '@shikijs/vitepress-twoslash/style.css'
 import 'virtual:group-icons.css'
+import HeatMap from './HeatMap.vue'
+import Test from '../../javascript/Test.vue'
 
 export default {
     extends: DefaultTheme,
