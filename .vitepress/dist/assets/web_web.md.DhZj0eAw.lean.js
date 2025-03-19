@@ -1,0 +1,1 @@
+import{_ as a,i as n,o as i,am as e}from"./chunks/framework.Cg7l08Gd.js";const c=JSON.parse('{"title":"Test","description":"","frontmatter":{},"headers":[],"relativePath":"web/web.md","filePath":"web/web.md"}'),t={name:"web/web.md"};function B(l,s,p,h,r,k){return i(),n("div",null,s[0]||(s[0]=[e("",7)]))}const o=a(t,[["render",B]]);export{c as __pageData,o as default};

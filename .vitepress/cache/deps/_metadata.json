@@ -1,46 +1,58 @@
 {
-  "hash": "06e46cde",
-  "configHash": "8eb617bd",
+  "hash": "ab0ad3e4",
+  "configHash": "f2ef80c8",
   "lockfileHash": "64183e2e",
-  "browserHash": "0fe905ad",
+  "browserHash": "fbf59fe2",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "f701e01c",
+      "fileHash": "88a0e636",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/.pnpm/@vue+devtools-api@7.7.2/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "f26e6e07",
+      "fileHash": "86c3ecdc",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/.pnpm/@vueuse+core@12.8.2_typescript@5.8.2/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "a3a47e8e",
+      "fileHash": "89aaf63e",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../node_modules/.pnpm/@vueuse+integrations@12.8.2_focus-trap@7.6.4_typescript@5.8.2/node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "8531aa80",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "33cef82a",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../node_modules/.pnpm/minisearch@7.1.2/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "e4590009",
       "needsInterop": false
     },
     "@shikijs/vitepress-twoslash/client": {
       "src": "../../../node_modules/.pnpm/@shikijs+vitepress-twoslash@2.5.0_typescript@5.8.2/node_modules/@shikijs/vitepress-twoslash/dist/client.mjs",
       "file": "@shikijs_vitepress-twoslash_client.js",
-      "fileHash": "a5dc867e",
-      "needsInterop": false
-    },
-    "date-fns": {
-      "src": "../../../node_modules/.pnpm/date-fns@4.1.0/node_modules/date-fns/index.js",
-      "file": "date-fns.js",
-      "fileHash": "536b0b5e",
+      "fileHash": "99788ba9",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-P6O7IG6E": {
+      "file": "chunk-P6O7IG6E.js"
+    },
     "chunk-AVV2H6J7": {
       "file": "chunk-AVV2H6J7.js"
-    },
-    "chunk-V6TY7KAL": {
-      "file": "chunk-V6TY7KAL.js"
     }
   }
 }

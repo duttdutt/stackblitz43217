@@ -1,3 +1,0 @@
-# Test
-
-[JS](/javascript/test)
