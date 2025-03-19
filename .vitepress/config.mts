@@ -1,216 +1,216 @@
-import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
-import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
+import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
+import { createFileSystemTypesCache } from "@shikijs/vitepress-twoslash/cache-fs";
 import {
     groupIconMdPlugin,
     groupIconVitePlugin,
-} from 'vitepress-plugin-group-icons'
-import { defineConfig } from 'vitepress'
-import { transformerNotationWordHighlight } from '@shikijs/transformers'
+} from "vitepress-plugin-group-icons";
+import { defineConfig } from "vitepress";
+import { transformerNotationWordHighlight } from "@shikijs/transformers";
 
 const nav = [
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-javascript.svg '/> JavaScript",
-        link: '/javascript/',
-        activeMatch: '/javascript/',
+        link: "/javascript/",
+        activeMatch: "/javascript/",
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-typescript.svg '/> TypeScript",
-        link: '/typescript/',
-        activeMatch: '/typescript/',
+        link: "/typescript/",
+        activeMatch: "/typescript/",
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-vue.svg '/> Vue",
-        link: '/vue/',
-        activeMatch: '/vue/',
+        link: "/vue/",
+        activeMatch: "/vue/",
     },
     {
         text: "<img src='https://api.iconify.design/material-icon-theme:folder-other.svg ' /> Другое",
-        link: '/other/',
-        activeMatch: '/other/',
+        link: "/other/",
+        activeMatch: "/other/",
     },
-]
+];
 
 const sidebar = {
-    '/javascript/': [
+    "/javascript/": [
         {
             text: "<img src='https://api.iconify.design/material-icon-theme:javascript.svg '/> Общее",
             collapsed: true,
             items: [
                 {
-                    text: 'Исполнение',
-                    link: '/javascript/Исполнение',
+                    text: "Исполнение",
+                    link: "/javascript/Исполнение",
                 },
             ],
         },
     ],
-    '/typescript/': [
+    "/typescript/": [
         {
             text: "<img src='https://api.iconify.design/material-icon-theme:typescript.svg '/> General",
             collapsed: true,
             items: [
                 {
-                    text: 'Массивы',
-                    link: '/typescript/arrays',
+                    text: "Массивы",
+                    link: "/typescript/arrays",
                 },
                 {
-                    text: 'Test2',
-                    link: '/typescript/test2',
+                    text: "Test2",
+                    link: "/typescript/test2",
                 },
             ],
         },
     ],
-}
+};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'Заметки',
-    description: 'A VitePress Site',
-    appearance: 'dark',
+    title: "Заметки",
+    description: "A VitePress Site",
+    appearance: "dark",
 
     markdown: {
         theme: {
-            light: 'material-theme-darker',
+            light: "material-theme-darker",
             dark: {
                 semanticHighlighting: false,
                 tokenColors: [
                     {
-                        scope: ['string', 'support.type.property-name.json'],
+                        scope: ["string", "support.type.property-name.json"],
                         settings: {
-                            foreground: '#C3E88D',
+                            foreground: "#C3E88D",
                         },
                     },
                     {
-                        scope: ['punctuation.definition.string'],
+                        scope: ["punctuation.definition.string"],
                         settings: {
-                            foreground: '#D9F5DD',
-                        },
-                    },
-                    {
-                        scope: [
-                            'keyword.operator.increment',
-                            'keyword.operator.decrement',
-                            'support.variable.property',
-                            'variable.other.object.property',
-                            'variable.other.property',
-                            'meta.object-literal.key',
-                            'keyword.operator.spread',
-                            'keyword.operator.rest',
-                            'keyword.operator.type',
-                            'variable.object.property',
-                        ],
-                        settings: {
-                            foreground: '#89DDFF',
+                            foreground: "#D9F5DD",
                         },
                     },
                     {
                         scope: [
-                            'variable',
-                            'source',
-                            'punctuation.separator',
-                            'keyword.operator.type.annotation',
-                            'punctuation.accessor',
-                            'string.other.link.title',
+                            "keyword.operator.increment",
+                            "keyword.operator.decrement",
+                            "support.variable.property",
+                            "variable.other.object.property",
+                            "variable.other.property",
+                            "meta.object-literal.key",
+                            "keyword.operator.spread",
+                            "keyword.operator.rest",
+                            "keyword.operator.type",
+                            "variable.object.property",
                         ],
                         settings: {
-                            foreground: '#BFC7D5',
-                        },
-                    },
-                    {
-                        scope: ['constant.numeric'],
-                        settings: {
-                            foreground: '#F78C6C',
-                        },
-                    },
-                    {
-                        scope: ['entity.name.function'],
-                        settings: {
-                            foreground: '#82AAFF',
-                        },
-                    },
-                    {
-                        scope: ['variable.parameter'],
-                        settings: {
-                            foreground: '#7986E7',
+                            foreground: "#89DDFF",
                         },
                     },
                     {
                         scope: [
-                            'storage',
-                            'storage.type',
-                            'keyword',
-                            'punctuation.accessor',
-                            'keyword.operator.expression',
+                            "variable",
+                            "source",
+                            "punctuation.separator",
+                            "keyword.operator.type.annotation",
+                            "punctuation.accessor",
+                            "string.other.link.title",
                         ],
                         settings: {
-                            foreground: '#C792EA',
+                            foreground: "#BFC7D5",
+                        },
+                    },
+                    {
+                        scope: ["constant.numeric"],
+                        settings: {
+                            foreground: "#F78C6C",
+                        },
+                    },
+                    {
+                        scope: ["entity.name.function"],
+                        settings: {
+                            foreground: "#82AAFF",
+                        },
+                    },
+                    {
+                        scope: ["variable.parameter"],
+                        settings: {
+                            foreground: "#7986E7",
                         },
                     },
                     {
                         scope: [
-                            'constant.language.null',
-                            'constant.language.undefined',
-                            'constant.language',
-                            'keyword.operator.optional',
+                            "storage",
+                            "storage.type",
+                            "keyword",
+                            "punctuation.accessor",
+                            "keyword.operator.expression",
                         ],
                         settings: {
-                            foreground: '#FF5874',
-                        },
-                    },
-                    {
-                        scope: ['markup.underline.link'],
-                        settings: {
-                            foreground: '#FF869A',
+                            foreground: "#C792EA",
                         },
                     },
                     {
                         scope: [
-                            'punctuation.definition.template-expression',
-                            'punctuation.definition.metadata.markdown',
+                            "constant.language.null",
+                            "constant.language.undefined",
+                            "constant.language",
+                            "keyword.operator.optional",
                         ],
                         settings: {
-                            foreground: '#D3423E',
+                            foreground: "#FF5874",
+                        },
+                    },
+                    {
+                        scope: ["markup.underline.link"],
+                        settings: {
+                            foreground: "#FF869A",
                         },
                     },
                     {
                         scope: [
-                            'entity.name.type.class',
-                            'entity.name',
-                            'support.type',
-                            'support.class',
-                            'meta.use',
-                            'entity.other.attribute-name.class',
-                            'source.css entity.name.tag',
-                            'support.class.component',
-                            'support.type',
-                            'constant.other.key',
-                            'entity.other.inherited-class',
-                            'entity.other',
-                            'entity.name.type',
-                            'support.class',
-                            'support.type.primitive',
-                            'support.type.builtin',
+                            "punctuation.definition.template-expression",
+                            "punctuation.definition.metadata.markdown",
                         ],
                         settings: {
-                            foreground: '#FFCB6B',
+                            foreground: "#D3423E",
                         },
                     },
                     {
                         scope: [
-                            'meta.structure.dictionary.value.json string.quoted.double',
+                            "entity.name.type.class",
+                            "entity.name",
+                            "support.type",
+                            "support.class",
+                            "meta.use",
+                            "entity.other.attribute-name.class",
+                            "source.css entity.name.tag",
+                            "support.class.component",
+                            "support.type",
+                            "constant.other.key",
+                            "entity.other.inherited-class",
+                            "entity.other",
+                            "entity.name.type",
+                            "support.class",
+                            "support.type.primitive",
+                            "support.type.builtin",
                         ],
                         settings: {
-                            foreground: '#80CBC4',
+                            foreground: "#FFCB6B",
                         },
                     },
                     {
                         scope: [
-                            'comment',
-                            'punctuation.definition.comment',
-                            'comment.block.html',
+                            "meta.structure.dictionary.value.json string.quoted.double",
                         ],
                         settings: {
-                            foreground: '#697098',
-                            fontStyle: 'italic',
+                            foreground: "#80CBC4",
+                        },
+                    },
+                    {
+                        scope: [
+                            "comment",
+                            "punctuation.definition.comment",
+                            "comment.block.html",
+                        ],
+                        settings: {
+                            foreground: "#697098",
+                            fontStyle: "italic",
                         },
                     },
                 ],
@@ -219,14 +219,17 @@ export default defineConfig({
         codeTransformers: [
             transformerTwoslash({
                 typesCache: createFileSystemTypesCache(),
-                errorRendering: 'line',
+                errorRendering: "line",
+            }),
+            transformerNotationWordHighlight({
+                matchAlgorithm: "v3",
             }),
         ],
         config(md) {
-            md.use(groupIconMdPlugin)
+            md.use(groupIconMdPlugin);
         },
         lineNumbers: false,
-        codeCopyButtonTitle: 'Test',
+        codeCopyButtonTitle: "Test",
     },
     vite: {
         plugins: [groupIconVitePlugin()],
@@ -234,11 +237,11 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
 
-        socialLinks: [{ icon: 'github', link: 'https://github.com//' }],
+        socialLinks: [{ icon: "github", link: "https://github.com//" }],
 
         editLink: {
-            pattern: 'https://github.com/duttdutt/docs/:path',
-            text: 'GitHub',
+            pattern: "https://github.com/duttdutt/docs/:path",
+            text: "GitHub",
         },
 
         nav,
@@ -248,4 +251,4 @@ export default defineConfig({
         //   { icon: "github", link: "https://github.com/vuejs/vitepress" },
         // ],
     },
-})
+});
