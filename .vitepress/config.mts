@@ -1,13 +1,11 @@
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
-import {
-    transformerNotationWordHighlight,
-  } from '@shikijs/transformers'
 import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
 import {
     groupIconMdPlugin,
     groupIconVitePlugin,
 } from 'vitepress-plugin-group-icons'
 import { defineConfig } from 'vitepress'
+import { transformerNotationWordHighlight } from '@shikijs/transformers'
 
 const nav = [
     {
@@ -223,9 +221,6 @@ export default defineConfig({
                 typesCache: createFileSystemTypesCache(),
                 errorRendering: 'line',
             }),
-            transformerNotationWordHighlight({
-                matchAlgorithm: 'v3'
-            })
         ],
         config(md) {
             md.use(groupIconMdPlugin)
